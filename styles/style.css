@@ -7,8 +7,10 @@ body {
     margin: 0;
     color: red;
     display: block;
-    width: 1024px;
-    min-width: 1024px;
+    width: 1020px;
+    min-width: 1020px;
+    height: 1732px;
+    min-height: 1732px;
 }
 
 .h1 {
@@ -17,4 +19,26 @@ body {
     margin: 0;
 }
 
-.navigation {}
+.navigation {
+    width: 1020;
+    height: 63;
+    background-color: #323232;
+}
+.navigation ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation .item {
+    color: red;
+    display: inline-block;
+    font-family: 'Lato';
+    font-size: 10pt;
+    text-transform: uppercase;
+    padding: 10px;
+    
+      
+}
+.navigation .item a {
+    color: green;
+}
