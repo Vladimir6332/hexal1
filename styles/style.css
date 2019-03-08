@@ -7,8 +7,9 @@ body {
     margin: 0;
     color: red;
     display: block;
-    width: 1024px;
-    min-width: 1024px;
+    width: 100%;
+    min-width: 0;
+    background: url("image.jpg");
 }
 
 .h1 {
