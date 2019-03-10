@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../assets/fonts/Lato-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../assets/fonts/Lato-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../assets/fonts/Lato-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MavenPro";
+    src: url("../assets/fonts/MavenPro-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

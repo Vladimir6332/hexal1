@@ -1,7 +1,7 @@
 a:hover,
 a {
-    color: inherit;
-    text-decoration: inherit;
+    color: none;
+    text-decoration: none;
 }
 
 input,

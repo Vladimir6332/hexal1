@@ -7,9 +7,9 @@ body {
     margin: 0;
     color: red;
     display: block;
-    width: 100%;
-    min-width: 0;
-    background: url("image.jpg");
+    width: 1020px;
+    min-width: 1020px;
+    margin: 0 auto;
 }
 
 .h1 {
@@ -18,4 +18,65 @@ body {
     margin: 0;
 }
 
-.navigation {}
+.navigation {
+    width: 100%;
+    height: 63px;
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-left {
+    position: absolute;
+    left: 315.3px;
+    top: 26px;
+}
+
+.nav-right {
+    position: absolute;
+    right: 312.3px;
+    top: 26px;
+}
+
+.item-nav {
+    display: inline-block;
+}
+
+.item-nav a {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 7.21379pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: justify;
+    text-transform: uppercase;
+    margin: 0 11px 0 11px;
+}
+
+.logo {
+    display: inline-block;
+    position: absolute;
+    margin: 10px 50% 0 auto;
+}
+
+.nav-left:before {
+    content: "";
+    width: 3px;
+    height: 2px;
+    position: absolute;
+    background-color: #484c5f;
+    top: 10px;
+    left: 77px;
+    border-radius: 100%;
+}
+
+.nav-right:before {
+    content: "";
+    width: 3px;
+    height: 2px;
+    position: absolute;
+    background-color: #484c5f;
+    top: 10px;
+    left: 48px;
+    border-radius: 100%;
+}
