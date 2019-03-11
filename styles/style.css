@@ -11,6 +11,7 @@ body {
     min-width: 1020px;
     height: 1732px;
     min-height: 1732px;
+    font-family: 'Lato';
 }
 
 .h1 {
@@ -20,6 +21,9 @@ body {
 }
 
 .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 1020;
     height: 63;
     background-color: #323232;
@@ -27,18 +31,25 @@ body {
 .navigation ul {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .navigation .item {
     color: red;
     display: inline-block;
-    font-family: 'Lato';
+    position: relative;
+    
     font-size: 10pt;
     text-transform: uppercase;
-    padding: 10px;
+    
+    margin: 0px 11px;
     
       
 }
 .navigation .item a {
-    color: green;
+  
+    
+    color: #ffffff;
+
+
 }
