@@ -9,9 +9,7 @@ body {
     display: block;
     width: 1020px;
     min-width: 1020px;
-    height: 1732px;
-    min-height: 1732px;
-    font-family: 'Lato';
+    margin: 0 auto;
 }
 
 .h1 {
@@ -21,35 +19,106 @@ body {
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1020;
-    height: 63;
+    width: 100%;
+    height: 63px;
     background-color: #323232;
-}
-.navigation ul {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.navigation .item {
-    color: red;
-    display: inline-block;
     position: relative;
-    
-    font-size: 10pt;
-    text-transform: uppercase;
-    
-    margin: 0px 11px;
-    
-      
 }
-.navigation .item a {
-  
+
+.nav-left {
+    position: absolute;
+    left: 315.3px;
+    top: 26px;
+}
+
+.nav-right {
+    position: absolute;
+    right: 312.3px;
+    top: 26px;
+}
+
+.item-nav {
+    display: inline-block;
+}
+
+.item-nav a {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 7.21379pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: justify;
+    text-transform: uppercase;
+    margin: 0 11px 0 11px;
+}
+
+.logo {
+    display: inline-block;
+    position: absolute;
+    margin: 10px 50% 0 auto;
+}
+
+.navigation::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 63px;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+	border-top: 26px solid  #323232;
+}
+
+.nav-left:before {
+    content: "";
+    width: 3px;
+    height: 2px;
+    position: absolute;
+    background-color: #484c5f;
+    top: 10px;
+    left: 77px;
+    border-radius: 100%;
+}
+
+.nav-right:before {
+    content: "";
+    width: 3px;
+    height: 2px;
+    position: absolute;
+    background-color: #484c5f;
+    top: 10px;
+    left: 48px;
+    border-radius: 100%;
+}
+.hex-row-start {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 89px;
+}
+.hexagon {
     
-    color: #ffffff;
+    width: 180px;
+    height: 208px;
+    transform: rotate(120deg);
+    overflow: hidden;
+    margin: 0 10px;
+}
 
-
+.hex-layer1 {    
+    width: 180px;
+    height: 208px;
+    transform: rotate(120deg);
+    overflow: hidden;
+}
+.hex-layer2 {
+    display: flex;
+    width: 180px;
+    height: 208px;
+    transform: rotate(120deg);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center; 
 }
