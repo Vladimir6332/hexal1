@@ -96,12 +96,31 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 89px;
+    top: 79px;
+    left: 0px;    
+}
+
+.hex-row-center {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+.hex-row-end {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -41px;
+    left: 0px;    
 }
 .hexagon {
     
     width: 180px;
-    height: 208px;
+    height: 230px;
     transform: rotate(120deg);
     overflow: hidden;
     margin: 0 10px;
@@ -109,16 +128,57 @@ body {
 
 .hex-layer1 {    
     width: 180px;
-    height: 208px;
+    height: 230px;
     transform: rotate(120deg);
     overflow: hidden;
 }
 .hex-layer2 {
     display: flex;
     width: 180px;
-    height: 208px;
+    height: 230px;
     transform: rotate(120deg);
     overflow: hidden;
     justify-content: center;
     align-items: center; 
+}
+
+.portfolio {
+    position: relative;
+}
+
+.portfolio::before {
+    content: "";
+    width: 410px;
+    height: 1px;
+    position: absolute;        
+    left: 30px;
+    top: 74px;
+    background-color: #e4e9eb;
+}
+
+.portfolio::after {
+    content: "";
+    width: 410px;
+    height: 1px;
+    position: absolute;
+    right: 30px;
+    top: 74px;
+    background-color: #e4e9eb;
+}
+
+.hex-row-start::before {
+    content: "";
+    width: 1px;
+    height: 104px;    
+    left: 99px;
+    top: -68px;
+    background-color: #e4e9eb;
+}
+.hex-row-end::after {
+    content: "";
+    width: 1px;
+    height: 104px;    
+    right: 99px;
+    top: -68px;
+    background-color: #e4e9eb;
 }
