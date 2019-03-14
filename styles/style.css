@@ -144,6 +144,7 @@ body {
 
 .portfolio {
     position: relative;
+    height: 721px;
 }
 
 .portfolio::before {
@@ -210,4 +211,9 @@ body {
     right: 30px;
     top: 462px;;
     background-color: #e4e9eb;
+}
+
+.about {
+    background-color: #2eb398;
+    height: 341px;
 }
