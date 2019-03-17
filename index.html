@@ -16,19 +16,19 @@
         <h1 class="h1">Hexal</h1>
         <nav class='navigation'>
             <ul class="nav-left">
-                <li class="item-nav"><a href="#">Portfolio</a></li>
-                <li class="item-nav"><a href="#">About</a></li>
+                <li class="item-nav"><a href="#portfolio">Portfolio</a></li>
+                <li class="item-nav"><a href="#about">About</a></li>
             </ul>
             <ul class="nav-right">
-                <li class="item-nav"><a href="#">Blog</a></li>
-                <li class="item-nav"><a href="#">Get in touch</a></li>
+                <li class="item-nav"><a href="#about-info">Blog</a></li>
+                <li class="item-nav"><a href="#footer">Get in touch</a></li>
             </ul>
             <div class="logo"><img src="assets/image/header/logo.png" alt="Hexal"></div>
         </nav>
     </header>
 
     <main>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class=" hex-row-start">
                 <div class="hexagon">
                     <div class="hex-layer1">
@@ -112,7 +112,7 @@
             </div>
 
         </section>
-        <section class="about">
+        <section class="about" id="about">
 
             <div class="about-container">
                 <div class="about-autor">
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-info">
+                <div class="about-info" id="about-info">
                     <h2>Smith Anderson</h2>
                     <h3>Illustrator & Character Designer</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhon&shy;cus
@@ -155,52 +155,65 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <section class="footer-form">
             <div class="form-container">
-                <fieldset class="form">
-                    <legend>
-                        <h2>Get In Touch</h2>
-                        <h3>In order to get in touch use the contact form below:</h3>
-                    </legend>
-                    <input type="text" placeholder="Name (Required)" required>
-                    <input type="text" placeholder="Email (Required)" required>
-                    <input type="text" placeholder="Subject">
-                    <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+                <form action="#">
+                    <fieldset class="form">
+                        <legend>
+                            <h2>Get In Touch</h2>
+                            <h3>In order to get in touch use the contact form below:</h3>
+                        </legend>
+                        <input type="text" placeholder="Name (Required)" required pattern="[a-z]{1,15}">
+                        <input type="email" placeholder="Email (Required) " required>
+                        <input type="text " placeholder="Subject ">
+                        <textarea name="message " id="message " placeholder="Write your message here... "></textarea>
 
-                </fieldset>
-                <button type="submit" class="submit">Send</button></div>
-            <div class="form-info-container">
-                <div class="form-info">
+                    </fieldset>
+                </form>
+                <button type="submit " class="submit ">Send</button></div>
+            <div class="form-info-container ">
+                <div class="form-info ">
                     <p><span>Quisque Hendrerit:</span> purus dapi&shy;bus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae.</p>
                 </div>
-                <div class="form-contact">
+                <div class="form-contact ">
                     <ul>
-                        <li class="item-contact location">
-                            <div><img src="assets/image/footer/location.png" alt="location">
+                        <li class="item-contact ">
+                            <div><img src="assets/image/footer/location.png " alt="location ">
 
                             </div>
-                            <p>Elm St. 14/05 Lost City</p>
+
                         </li>
-                        <li class="item-contact phone">
-                            <div> <img src="assets/image/footer/phone.png" alt="location">
+                        <li class="item-contact  ">
+                            <div> <img src="assets/image/footer/phone.png " alt="location ">
 
                             </div>
-                            <p>+ 3528 331 86 35</p>
+
                         </li>
-                        <li class="item-contact mail">
-                            <div><img src="assets/image/footer/mail.png" alt="location">
+                        <li class="item-contact  ">
+                            <div><img src="assets/image/footer/mail.png " alt="location ">
 
                             </div>
-                            <p>info@hexalcorp.com</p>
+
+
                         </li>
                     </ul>
+                    <div class="contact">
+                        <p class="location">Elm St. 14/05 Lost City</p>
+                        <a href="tel: +35283318635" class="phone">
+                            <p>+ 3528 331 86 35</p>
+                        </a>
+                        <a href="mailto: info@hexalcorp.com" class="mail">
+                            <p>info@hexalcorp.com</p>
+                        </a>
+
+                    </div>
 
 
                 </div>
             </div>
         </section>
-        <section class="footer-copyright">
+        <section class="footer-copyright ">
             <p>© Copyright 2013 by PSDchat</p>
 
         </section>
